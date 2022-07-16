@@ -1,0 +1,61 @@
+{% extends "layouts/main.html" %}
+
+{% block content%}
+
+</body>
+
+<h5>{{message}}</h5>
+
+<!-- Record and Stop Buttons -->
+<button id="record-button">Record</button>
+<button id="stop-button">Stop</button>
+<!-- JQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+  
+  $("#record-button").click( function(){
+        navigator.mediaDevices
+            .getUserMedia({audio: true, video: false})
+            .then(handleSuccess);
+  });
+
+  $("#stop-button").click( function(){
+        console.log(audio_buffer)
+  });
+
+</script>
+
+
+
+
+<!-- Audio player (recorder) -->
+<audio id="player" controls></audio>
+<script>
+  const player = document.getElementById('player');
+  var audio_buffer = []
+  const handleSuccess = function (stream) {
+    const context = new AudioContext();
+    const source = context.createMediaStreamSource(stream);
+    const processor = context.createScriptProcessor(1024, 1, 1);
+
+    source.connect(processor);
+    processor.connect(context.destination);
+
+    processor.onaudioprocess = function(e) {
+      // Do something with the data, e.g. convert it to WAV
+      audio_buffer.push(e.inputBuffer);
+      //console.log(audio_buffer);
+    };
+  };
+
+
+//   navigator.mediaDevices
+//     .getUserMedia({audio: true, video: false})
+//     .then(handleSuccess);
+</script>
+
+
+</body>
+
+{% endblock %}
