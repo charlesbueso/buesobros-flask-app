@@ -1,6 +1,8 @@
 from pocketsphinx import AudioFile
+import json
+import os
 
-def sr(audio_file, hmm='en-us',lm='en-us.lm.bin',dict='cmudict-en-us-modify.dict'):
+def sr(audio_file, hmm='en-us',lm='en-us.lm.bin',dict='cmudict-en-us-modify-TEST.dict'):
 
     config = {
         'verbose': False,
@@ -15,6 +17,57 @@ def sr(audio_file, hmm='en-us',lm='en-us.lm.bin',dict='cmudict-en-us-modify.dict
 
     audio = AudioFile(**config)
     for phrase in audio:
-        return print(phrase.segments(detailed=True))
+        return phrase.segments(detailed=True)
 
-sr(audio_file='audio_files\hello_everyone.wav')
+#if audio contains selected word and other non-selected words, keep it (for unique words)
+#2-second recordings minimum (silence before, and after word), or add .5seg silence before and after?
+
+#print(sr(audio_file='audio_files\drink.wav'))
+
+#for every list in output, for every 1st element in list (create list of all), compare elements with keys in modify dict
+#if any key matches, word has been trained
+#if any key does not match, remove 1st key from removedDict, run sr() again
+
+toIgnore = {'<sil>':0,'<s>':0,'</s>':0, '[SPEECH]':0}
+
+modifyDict = {}
+with open("cmudict-en-us-modify-TEST.dict") as file:
+    for line in file:
+        if line == '\n':
+            continue
+        else:
+            keyAndValue = line.split(' ',1)
+            modifyDict[keyAndValue[0]] = keyAndValue[1]
+
+modifyDictTest = modifyDict
+
+def trainVoc(newWord, newWordAudio, modifyDict, deletedWords, counter=0):
+    heard = {}
+    srOut = sr(audio_file=newWordAudio)
+    if srOut is None:
+        return print("sr() returns none")
+    for i in srOut:
+        if i[0] in toIgnore: continue
+        else: heard[i[0]] = 0
+
+    print(heard)
+
+    if newWord in heard:
+        with open("cmudict-en-us-modify-TEST.dict", 'w') as f:
+            for key in modifyDictTest.keys():
+                f.write(key + " " + modifyDictTest[key])
+        return print(newWord + " -- has been trained:\n deleted: " + str(len(deletedWords)) + " words from previous DICT file")
+    else:
+        del modifyDictTest[list(heard.keys())[0]]
+        deletedWords[list(heard.keys())[0]] = newWord
+        with open("cmudict-en-us-modify-TEST.dict", 'w') as f:
+            for key in modifyDictTest.keys():
+                f.write(key + " " + modifyDictTest[key])
+        counter += 1
+        if counter < 30:
+            trainVoc(newWord=newWord, newWordAudio=newWordAudio, modifyDict=modifyDictTest,deletedWords=deletedWords, counter=counter)
+        else:
+            return print('fail, try another audio!')
+
+delThese = {}
+trainVoc(newWord='bike', newWordAudio='audio_files\\bike.wav', modifyDict=modifyDictTest, deletedWords=delThese)

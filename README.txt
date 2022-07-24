@@ -46,3 +46,131 @@ bin\Release\Win32\pocketsphinx_continuous.exe -infile C:\Users\papia\Documents\B
 bin\Release\Win32\pocketsphinx_continuous.exe -infile C:\Users\papia\Documents\BuesoBros\hello_everyone.wav -hmm model\en-us\en-us -lm model\en-us\en-us.lm.bin -jsgf C:\Users\papia\Documents\BuesoBros\hello-align.jsgf -dict model\en-us\cmudict-en-us.dict -backtrace yes -fsgusefiller no -bestpath no
 bin\Release\Win32\pocketsphinx_continuous.exe -infile C:\Users\papia\Documents\BuesoBros\i_am_going_to_eat.wav -hmm model\en-us\en-us -lm model\en-us\en-us.lm.bin -jsgf C:\Users\papia\Documents\BuesoBros\i_am_going_to_eat-align.jsgf -dict model\en-us\cmudict-en-us.dict -backtrace yes -fsgusefiller no -bestpath no
 bin\Release\Win32\pocketsphinx_continuous.exe -infile C:\Users\papia\Documents\BuesoBros\i_am_going_to_eat.wav -hmm model\en-us\en-us -lm model\en-us\en-us.lm.bin -jsgf C:\Users\papia\Documents\BuesoBros\i_am_going_to_eat-align.jsgf -dict C:\Users\papia\Documents\BuesoBros\customized_words.dict -backtrace yes -fsgusefiller no -bestpath no
+
+people-apple-map: P IY P AH L - AE P AH L - M AE P
+people-i-hope-not: P IY P AH L - AY - HH OW P - N AA T
+
+
+Vocabulary:
+People
+Apple
+Map
+
+Bike
+Number
+Lab
+
+Take
+Stiff
+Late
+
+Water
+Butter
+
+Certain
+Put
+Rent
+
+Drink
+Adapt
+Mad
+
+Kind
+Marker
+Smak
+
+Get
+Magnet
+Rag
+
+Money
+Lamp
+Ram
+
+Night
+Cranberry
+Run
+
+Think
+Thing
+
+Fake
+Photograph
+Offer
+Laugh
+
+Vertical
+Liver
+Love
+
+Think
+Nothing
+Math
+
+The
+Rather
+Smooth
+
+Small
+Mask
+Miss
+
+Zebra
+Busy
+Maze
+
+Shake
+Smushed
+Mash
+
+Genre
+Television
+Gage
+
+Hunt
+Ahead
+
+Chase
+Teacher
+Match
+
+Jog
+Magic
+Age
+
+Yes
+Mayo
+Million
+
+Waste
+Away
+
+Right
+Run
+Mark
+
+Lake
+Belt
+Mall
+Model
+-------Part II--------
+Hello
+Hi
+Hey
+
+Hello, my name is...
+Hi, my name is...
+
+Hello, pleasure to meet you.
+Hi...
+
+Hello, how are you?
+Hi...?
+
+Good morning.
+Good afternoon.
+Good evening.
+
+Good morning, how are you?
+Good afternoon.
+Good evening.
