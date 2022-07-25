@@ -77,7 +77,7 @@ Mad
 
 Kind
 Marker
-Smak
+Smack
 
 Get
 Magnet

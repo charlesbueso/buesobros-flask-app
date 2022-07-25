@@ -22,13 +22,12 @@ def sr(audio_file, hmm='en-us',lm='en-us.lm.bin',dict='cmudict-en-us-modify-TEST
 #if audio contains selected word and other non-selected words, keep it (for unique words)
 #2-second recordings minimum (silence before, and after word), or add .5seg silence before and after?
 
-#print(sr(audio_file='audio_files\drink.wav'))
-
 #for every list in output, for every 1st element in list (create list of all), compare elements with keys in modify dict
 #if any key matches, word has been trained
 #if any key does not match, remove 1st key from removedDict, run sr() again
 
 toIgnore = {'<sil>':0,'<s>':0,'</s>':0, '[SPEECH]':0}
+#finalDeleted = {}
 
 modifyDict = {}
 with open("cmudict-en-us-modify-TEST.dict") as file:
@@ -58,16 +57,18 @@ def trainVoc(newWord, newWordAudio, modifyDict, deletedWords, counter=0):
                 f.write(key + " " + modifyDictTest[key])
         return print(newWord + " -- has been trained:\n deleted: " + str(len(deletedWords)) + " words from previous DICT file")
     else:
+        print(list(heard.keys())[0] + " was deleted")
         del modifyDictTest[list(heard.keys())[0]]
         deletedWords[list(heard.keys())[0]] = newWord
+        #finalDeleted[list(heard.keys())[0]] = newWord    we want to save deleted files to cleaner dictionary (for later), for now removed_dict.txt
         with open("cmudict-en-us-modify-TEST.dict", 'w') as f:
             for key in modifyDictTest.keys():
                 f.write(key + " " + modifyDictTest[key])
         counter += 1
-        if counter < 30:
+        if counter < 10:
             trainVoc(newWord=newWord, newWordAudio=newWordAudio, modifyDict=modifyDictTest,deletedWords=deletedWords, counter=counter)
         else:
             return print('fail, try another audio!')
 
 delThese = {}
-trainVoc(newWord='bike', newWordAudio='audio_files\\bike.wav', modifyDict=modifyDictTest, deletedWords=delThese)
+trainVoc(newWord='money', newWordAudio='audio_files\money.wav', modifyDict=modifyDictTest, deletedWords=delThese)

@@ -101,4 +101,261 @@ wren R EH N
 roar R AO R
 end EH N D
 moran M ER AE N
-terrific T ER IH F IH K
+terrific T ER IH F IH K #rent 
+
+#drink !!
+
+{'and(2)': 0, 'that': 0}
+and(2) was deleted
+{'and': 0, 'that': 0}
+and was deleted
+{'on': 0, 'that': 0}
+on was deleted
+{'i': 0, 'doubt': 0}
+i was deleted
+{"i'm(2)": 0, 'not': 0}
+i'm(2) was deleted
+{'that': 0}
+that was deleted
+{"i'm": 0, 'not': 0}
+{'daft': 0}
+daft was deleted
+{"i'll": 0, 'bet': 0}
+i'll was deleted
+{'adapt': 0}
+	#adapt -- has been trained
+
+{'monahan': 0}
+monahan was deleted
+{'monaghan': 0}
+monaghan was deleted
+{'matt': 0}
+matt was deleted
+{'matter': 0}
+matter was deleted
+{'mattered': 0}
+mattered was deleted
+{'mat': 0}
+mat was deleted
+{'mater(3)': 0}
+mater(3) was deleted
+{'met': 0}
+met was deleted
+{'lou': 0, 'manahan': 0}
+{'man': 0}
+man was deleted
+{'you': 0, 'not': 0}
+you was deleted
+{'do': 0, 'not': 0}
+do was deleted
+{'mona': 0}
+mona was deleted
+{'men': 0}
+men was deleted
+{'mother': 0}
+mother was deleted
+fail, try another audio!
+PS C:\Users\papia\Documents\BuesoBros\buesobros-flask-app> python -u "c:\Users\papia\Documents\BuesoBros\buesobros-flask-app\nlp_model.py"
+{'well': 0}
+well was deleted
+{'her': 0}
+her was deleted
+{'huh': 0}
+huh was deleted
+{'uh-huh': 0}
+uh-huh was deleted
+{'weller': 0}
+weller was deleted
+{'whelan(2)': 0}
+whelan(2) was deleted
+{'welcome': 0}
+welcome was deleted
+{'heather': 0}
+heather was deleted
+{'where(2)': 0, 'are(2)': 0}
+{'dwell': 0}
+dwell was deleted
+{'whelan': 0}
+whelan was deleted
+{'twelve': 0}
+twelve was deleted
+{'wherever(2)': 0}
+wherever(2) was deleted
+{'wells': 0}
+wells was deleted
+{'wealth': 0}
+wealth was deleted
+fail, try another audio!
+PS C:\Users\papia\Documents\BuesoBros\buesobros-flask-app> python -u "c:\Users\papia\Documents\BuesoBros\buesobros-flask-app\nlp_model.py"
+{'the': 0, 'now': 0}
+the was deleted
+{'two': 0, 'now': 0}
+two was deleted
+{'to': 0, 'now': 0}
+to was deleted
+{'who': 0, 'now': 0}
+{'new': 0, 'now': 0}
+{'now': 0}
+now was deleted
+{'moulin': 0}
+moulin was deleted
+{'tuna': 0}
+tuna was deleted
+{'noonan': 0}
+noonan was deleted
+{'newsman': 0}
+newsman was deleted
+fail, try another audio!
+PS C:\Users\papia\Documents\BuesoBros\buesobros-flask-app> python -u "c:\Users\papia\Documents\BuesoBros\buesobros-flask-app\nlp_model.py"
+sr() returns none
+PS C:\Users\papia\Documents\BuesoBros\buesobros-flask-app> python -u "c:\Users\papia\Documents\BuesoBros\buesobros-flask-app\nlp_model.py"
+{'brunette': 0}
+brunette was deleted
+{'none': 0}
+none was deleted
+{'brunet': 0}
+brunet was deleted
+{'bruno': 0}
+{'no': 0}
+no was deleted
+{'then': 0}
+then was deleted
+{'what(2)': 0}
+what(2) was deleted
+{'one(2)': 0}
+one(2) was deleted
+{'luna': 0}
+luna was deleted
+{'when(4)': 0}
+when(4) was deleted
+fail, try another audio!
+PS C:\Users\papia\Documents\BuesoBros\buesobros-flask-app> python -u "c:\Users\papia\Documents\BuesoBros\buesobros-flask-app\nlp_model.py"
+{'oh': 0}
+oh was deleted
+{'uh': 0}
+uh was deleted
+{'wow': 0}
+wow was deleted
+{'love': 0}
+{'while(2)': 0}
+while(2) was deleted
+{'o.': 0}
+o. was deleted
+{'ow': 0}
+ow was deleted
+{'ah': 0}
+ah was deleted
+{'um': 0}
+um was deleted
+{'in': 0, 'iowa(2)': 0}
+in was deleted
+fail, try another audio!
+PS C:\Users\papia\Documents\BuesoBros\buesobros-flask-app> python -u "c:\Users\papia\Documents\BuesoBros\buesobros-flask-app\nlp_model.py"
+{'not': 0}
+not was deleted
+{'knot': 0}
+knot was deleted
+{'nina': 0}
+nina was deleted
+{'linda': 0}
+{'nothing': 0}
+nothing was deleted
+{'nine': 0, 'hundred(3)': 0}
+nine was deleted
+{'net': 0}
+net was deleted
+{'nun': 0}
+nun was deleted
+{'nah': 0}
+nah was deleted
+{'nunn': 0}
+nunn was deleted
+fail, try another audio!
+PS C:\Users\papia\Documents\BuesoBros\buesobros-flask-app> python -u "c:\Users\papia\Documents\BuesoBros\buesobros-flask-app\nlp_model.py"
+{'madison': 0}
+madison was deleted
+{'madame': 0}
+madame was deleted
+{'madden': 0}
+madden was deleted
+{'madam': 0}
+{'mountain': 0}
+mountain was deleted
+{'mattie': 0}
+mattie was deleted
+{'matty': 0}
+matty was deleted
+{'madeline': 0}
+madeline was deleted
+{'matalin': 0}
+matalin was deleted
+{'noun': 0}
+noun was deleted
+fail, try another audio!
+PS C:\Users\papia\Documents\BuesoBros\buesobros-flask-app> python -u "c:\Users\papia\Documents\BuesoBros\buesobros-flask-app\nlp_model.py"
+{'medicine': 0}
+medicine was deleted
+{'matta': 0}
+matta was deleted
+{'matters': 0}
+matters was deleted
+{'mad': 0}
+deleted: 3 words from previous DICT file
+	#mad -- has been trained
+ 
+{'kinder': 0}
+kinder was deleted
+{"tryin'": 0}
+tryin' was deleted
+{'cayenne': 0}
+cayenne was deleted
+{'kind': 0}
+deleted: 3 words from previous DICT file
+	#kind -- has been trained
+
+{'martyr': 0}
+martyr was deleted
+{'marker': 0}
+deleted: 1 words from previous DICT file
+	#marker -- has been trained
+
+#smack !!
+
+#get !!
+
+#magnet !!
+
+#rag !!
+
+{'manu': 0}
+manu was deleted
+{'non': 0, 'u.': 0}
+non was deleted
+{'mani': 0}
+mani was deleted
+{'juan(2)': 0, 'u.': 0}
+juan(2) was deleted
+{'mon(2)': 0, 'u.': 0}
+{'ma': 0, 'knew(2)': 0}
+ma was deleted
+{'nobody': 0, 'knew(2)': 0}
+nobody was deleted
+{'nonunion': 0}
+nonunion was deleted
+{'pneumonia': 0}
+pneumonia was deleted
+{'nadia(2)': 0}
+nadia(2) was deleted
+fail, try another audio!
+PS C:\Users\papia\Documents\BuesoBros\buesobros-flask-app> python -u "c:\Users\papia\Documents\BuesoBros\buesobros-flask-app\nlp_model.py"
+{'na': 0, 'knew(2)': 0}
+na was deleted
+{'monument(2)': 0}
+monument(2) was deleted
+{'monument': 0}
+monument was deleted
+{'bonnie': 0}
+bonnie was deleted
+{'money': 0}
+ deleted: 4 words from previous DICT file
+	#money -- has been trained:
